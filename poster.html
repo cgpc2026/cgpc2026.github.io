@@ -2,21 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>PDF View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海报详情</title>
     <style>
-        body{
+        * {
             margin: 0;
-            overflow: hidden;
+            padding: 0;
+            box-sizing: border-box;
         }
-        iframe{
-            width: 100vw;
-            height: 100vh;
-            border: none;
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .poster-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .back-btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <iframe src="poster2026.pdf#toolbar=0&zoom=100%"></iframe>
+    <div class="container">
+        <img src="images/poster_read_more.png" alt="海报详情" class="poster-image">
+        <br>
+        <a href="index.html" class="back-btn">返回首页</a>
+    </div>
 </body>
 </html>
