@@ -325,33 +325,41 @@ button {
 }
 #navbarSupportedContent: { display: none !important; }
 .navbar-expand-lg .navbar-nav .nav-link { display: none; }
-.costume_header{ 
-    width: 100%; 
-    float: left;
+.costume_header{
+    width: 100%;
     background-color: #05141f;
-    height: auto;
 }
-.menu_main{ 
-    width: 90%; 
-    float: left;
-    position: relative; /* 为菜单添加定位上下文 */
-    z-index: 999; /* 设置一个较高的z-index值 */
+.menu_main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 999;
+}
+
+.menu_main > ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu_main > ul > li {
-    position: relative; /* 为li设置定位 */
+    position: relative;
+    flex-shrink: 0;
 }
 
-.menu_main ul{ 
+.menu_main ul{
     margin: 0px;
     padding: 0px;
 }
 .menu_main li {
-    float: left;
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff;
-    text-transform: uppercase;
-    padding: 8px 15px;
+    padding: 8px 12px;
+    white-space: nowrap;
 }
 .menu_main li.active {
     background-color: #c9e5fb;
@@ -359,7 +367,9 @@ button {
 }
 .menu_main li a {
     color: #ffffff;
-    padding: 11px 20px;
+    padding: 11px 12px;
+    text-decoration: none;
+    display: block;
 }
 .menu_main li a:hover{
     color: #ffffff; 

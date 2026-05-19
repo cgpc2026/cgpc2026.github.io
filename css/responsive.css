@@ -151,10 +151,11 @@
         background-size: cover;
     }
     .menu_main li {
-        padding: 8px 7px;
+        padding: 8px 5px;
     }
     .menu_main li a {
-        padding: 11px 19px;
+        padding: 11px 10px;
+        font-size: 14px;
     }
     .menu_main_1 li {
         padding: 8px 24px;
@@ -264,10 +265,11 @@
         width: 370px;
     }
     .menu_main li {
-        padding: 10px 5px;
+        padding: 10px 3px;
     }
     .menu_main li a {
-        padding: 13px 4px;
+        padding: 13px 5px;
+        font-size: 13px;
     }
     .menu_main_1 li {
         padding: 10px 12px;
