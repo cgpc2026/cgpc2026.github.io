@@ -305,6 +305,9 @@
         width: 100%;
         font-size: 14px;
     }
+    .reg-qrcode-row {
+        gap: 12px;
+    }
     .software_section {
         padding-bottom: 0px;
     }
@@ -630,6 +633,12 @@
     .software_text {
         width: 100%;
         font-size: 14px;
+    }
+    .reg-qrcode-row {
+        gap: 8px;
+    }
+    .reg-qrcode-row img {
+        max-height: 160px;
     }
     .software_section {
         padding: 0px;

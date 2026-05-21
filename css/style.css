@@ -952,6 +952,28 @@ th {
 
     }
 
+.reg-qrcode-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.reg-qrcode-row .image-box {
+    flex: 1 1 0;
+    width: auto;
+    float: none;
+    text-align: center;
+}
+
+.reg-qrcode-row img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
 .clear:after {
     clear: both;
     content: ".";
@@ -965,4 +987,3 @@ th {
     float: center;
     text-align:center;
     }
-
