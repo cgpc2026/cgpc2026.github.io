@@ -1,1 +1,1 @@
-# cgpc2025.github.io
+# cgpc2026.github.io
